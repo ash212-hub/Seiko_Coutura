@@ -25,15 +25,7 @@ export default function App() {
       <ambientLight intensity={20} />
       <Environment preset="city" />
       <OrbitControls
-  enableZoom={false}
-  enablePan={false}
-  enableDamping={true}
-  dampingFactor={0.2}
-  rotateSpeed={0.3}
-  maxPolarAngle={Math.PI / 2}
-  minPolarAngle={Math.PI / 3}
-  minAzimuthAngle={-Math.PI / 6} // -45 degrees
-  maxAzimuthAngle={Math.PI / 6}  // +45 degrees
+ enabled={false}
 />
        <directionalLight position={[0, 10, 0]} intensity={1} castShadow shadow-mapSize={2048} shadow-bias={-0.0001} />  
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} shadow-mapSize={2048} castShadow />
